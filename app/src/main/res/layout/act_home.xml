@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ActHome">
+
+    <include
+        android:id="@+id/top_main"
+        layout="@layout/top_main" />
+
+    <!--<com.hulai.dushuren.utils.NoScrollViewPager-->
+    <!--android:id="@+id/noScrollViewPager"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/rg_group"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/top_main">-->
+
+    <!--</com.hulai.dushuren.utils.NoScrollViewPager>-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/rg_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_main" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_content">
+
+        <com.hulai.dushuren.utils.MyRadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_tab_home_selector"
+            android:text="精品汇"
+            app:rb_height="20dp"
+            app:rb_width="20dp" />
+
+        <com.hulai.dushuren.utils.MyRadioButton
+            android:id="@+id/rb_news"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_news_selector"
+            android:text="精品汇"
+            app:rb_height="20dp"
+            app:rb_width="20dp" />
+
+        <com.hulai.dushuren.utils.MyRadioButton
+            android:id="@+id/rb_service"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_service_selector"
+            android:text="精品汇"
+            app:rb_height="20dp"
+            app:rb_width="20dp" />
+
+        <com.hulai.dushuren.utils.MyRadioButton
+            android:id="@+id/rb_gov"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_gov_selector"
+            android:text="精品汇"
+            app:rb_height="20dp"
+            app:rb_width="20dp" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>
