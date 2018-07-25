@@ -8,6 +8,7 @@ import com.hulai.dushuren.mvp.model.bean.TeacherBean;
 import java.util.List;
 
 import io.reactivex.Observable;
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
@@ -24,4 +25,7 @@ public interface ApiService {
 
     @GET("LatestTeachers")
     Observable<BaseBean<List<TeacherBean>>> getTeachers(@Query("start") int start, @Query("end") int end);
+
+    @GET("Book")
+    Call<BaseBean<BookBean>> getBookNoRx(@Query("id") String id);
 }

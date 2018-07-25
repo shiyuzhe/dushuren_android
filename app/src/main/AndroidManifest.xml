@@ -21,12 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.ActView">
-
-        </activity>
-        <activity android:name=".ui.activity.ActTab">
-
-        </activity>
+        <activity android:name=".ui.activity.ActView"></activity>
+        <activity android:name=".ui.activity.ActTab"></activity>
+        <activity android:name=".ui.activity.ActRxJava"></activity>
     </application>
 
 </manifest>

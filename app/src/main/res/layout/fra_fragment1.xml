@@ -14,14 +14,14 @@
         android:layout_marginTop="218dp"
         android:text="Page:"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/titile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:textSize="50sp"
-       />
+        android:gravity="center"
+        android:textSize="16sp" />
 </RelativeLayout>
