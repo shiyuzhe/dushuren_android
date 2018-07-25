@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hulai.dushuren.ui.activity.ActRxJava">
+
+    <TextView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="map"
+        android:padding="20dp"
+        android:text="map" />
+
+    <TextView
+        android:id="@+id/interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="interval"
+        android:padding="20dp"
+        android:text="interval" />
+
+    <TextView
+        android:id="@+id/retryWhen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="retryWhen"
+        android:padding="20dp"
+        android:text="retryWhen" />
+
+    <TextView
+        android:id="@+id/repeatWhen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="repeatWhen"
+        android:padding="20dp"
+        android:text="repeatWhen" />
+
+    <TextView
+        android:id="@+id/nestedCallback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="nestedCallback"
+        android:padding="20dp"
+        android:text="nestedCallback" />
+
+
+    <TextView
+        android:id="@+id/merge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="merge"
+        android:padding="20dp"
+        android:text="merge" />
+
+    <TextView
+        android:id="@+id/zip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="zip"
+        android:padding="20dp"
+        android:text="zip" />
+</LinearLayout>
